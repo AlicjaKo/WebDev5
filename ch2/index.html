@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+    <script type="text/javascript">
+        const redShape = document.getElementById("red");
+        redShape.onclick = () => {
+            redShape.style.display = "none";
+        }
+        
+        const blueShape = document.getElementById("blue");
+        blueShape.onclick = () => {
+            blueShape.style.display = "none";
+        }
+        blueShape.addEventListener('mouseover', () => {
+            blueShape.style.scale = 1.5;
+        })
+
+
+        const greenShape = document.getElementById("green");
+        greenShape.onclick = () => {
+            greenShape.style.display = "none";
+        }
+    </script>
+</body>
+</html>
